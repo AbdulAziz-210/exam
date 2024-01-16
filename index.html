@@ -4,32 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <title>your site name</title>
+    <title>EXAM</title>
 </head>
 <body>
     <header class="site-header">
         <div class="container">
             <div class="header">
-                
+                <img class="header__img" src="./images/site-img.svg" alt="site-img">
+                <nav class="header__navbar navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#">Product</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#">Customers</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#">Pricing</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#">Resources</a>
+                        </li>
+                    </ul>
+                    <div class="header__navbar-wrap">
+                        <a class="header__sign-in-link" href="#">Sign In</a>
+                        <a class="header__sign-up-link" href="#">Sign Up</a>
+                        <img src="./images/mode-icon.svg" alt="mode img" width="24" height="24">
+                        <button class="header__hamburger-btn">
+                            <img class="header__hamgurger-img" src="./images/burger-menu.svg" alt="burger menu" width="28" height="31">
+                        </button>
+                    </div>
+                </nav>
             </div>
         </div>
     </header>
-
-
-
-
+    
+    
+    
+    
     <main class="site-main">
         <section class="hero-section">
             <div class="container">
                 <div class="hero">
-
+                    <div class="hero__content">
+                        <h2 class="hero__title">Work at the speed of thought</h2>
+                        <div class="hero__text">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</div>
+                        <div class="video__wrap">
+                            <a class="hero__link" href="#">Get started</a>
+                            <a class="hero__video-link" href="#"><img src="./images/hero/video-icon.svg" alt="" width="20" height="17"> Watch the Video</a>
+                        </div>
+                    </div>
+                    <picture>
+                        <source
+                        type="images/png"
+                        media="(max-width:650px)"
+                        srcset="./images/hero/amico-tablet.png 1x, ./images/hero/amico2x-tablet.png 2x"
+                        >
+                        <!-- <source
+                        type="images/png"
+                        media="(max-width:800px)"
+                        srcset="./images/hero/amico.png 1x, ./images/hero/amico2x.png 2x"
+                        > -->
+                        <img src="./images/hero/amico.png" alt="people" width="600" height="555">
+                    </picture>
                 </div>
             </div>
         </section>
     </main>
-
-
-
+    
+    
+    
     <footer class="site-footer">
         <div class="container">
             <div class="footer"></div>

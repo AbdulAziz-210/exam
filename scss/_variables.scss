@@ -1,0 +1,22 @@
+
+// :root{
+//     --color:#02897A;
+// }
+
+
+@mixin display($justify:start, $align:start, $direction:row){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+@mixin textStyle($color:#22343D,$textAlign:center, $fs:16px, $fw:400, $lh:28px){
+    color: $color;
+    font-size: $fs;
+    font-style: normal;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
+
+
