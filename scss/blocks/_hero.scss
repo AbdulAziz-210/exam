@@ -1,6 +1,7 @@
 
 
 .hero-section{
+    margin-bottom: 114px;
     padding-top: 115px;
 }
 .hero{
@@ -17,7 +18,7 @@
 .hero__text{
     margin-bottom: 45px;
     @include textStyle($fs:18px, $fw:400, $lh:28px);
-
+    
 }
 .video__wrap{
     @include display($align:center);
@@ -25,25 +26,41 @@
 .hero__link{
     margin-right: 30px;
     width: 175px;
-    padding: 15px 41px;
+    padding: 15px 39px;
     border-radius: 4px;
     @include textStyle($color:#fff, $fs:16px, $fw:700, $lh:normal);
     background-color: #02897A;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    
+    &:hover{
+        
+        color:#02897A;
+        background-color: transparent ;
+        border-color: #02897A;
+        
+    }
 }
 .hero__video-link{
     @include textStyle($color:#02897A, $fs:16px, $fw:600, $lh:normal);
     text-decoration-line: underline;
+    @include display($align:center);
 }
 
 
 
-@media (max-width:600px){
+@media (max-width:800px){
+    .hero-section{
+        @include display($align:center, $justify:center);
+        // margin: 0 auto;
+        @include display($align:center, $justify:center);
+    }
     .hero{
         @include display($direction:column-reverse);
     }
     .hero__content{
         width: 100%;
-        // @include display($direction:column, $align:center, $justify:center);
+        @include display($direction:column, $align:center, $justify:center);
     }
     .hero__title{
         width: 100%;
@@ -54,9 +71,39 @@
     .hero__text{
         width: 100%;
         text-align: center;
-        // @include display($justify:center);
     }
     .video__wrap{
         @include display($justify:center, $align:center);
     }
+    picture{
+        @include display($justify:center);
+        text-align: center;
+        width: 100%;
+    }
+    .hero__link{
+        padding: 15px 30px;
+    }
 }
+
+@media (max-width:500px){
+    .hero__title{
+        width: 374px;
+        width: 100%;
+        text-align: center;
+    }
+    .video__wrap{
+        width: 100%;
+        @include display($align:center, $justify:center, $direction:column);
+    }
+    .hero__link{
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    picture{
+        @include display($justify:center);
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
