@@ -1,0 +1,29 @@
+
+
+
+.easy-section{
+    background-image: url("../images/easy/easy-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center top;
+}
+.easy{
+    padding-top: 52px;
+}
+.easy__content{
+    // @include display($align:center, $justify:center, $direction:column);
+    margin: 0 auto;
+    margin-bottom: 32px;
+    width: 542px;
+    text-align: center;
+}
+.easy__wrap{
+    @include display($align:center);
+
+}
+.easy__wrap-img{
+    margin-right: 41px;
+}
+.easy__wrap-bottom-img{
+    margin-left: 46px;
+}

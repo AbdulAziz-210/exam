@@ -1,5 +1,52 @@
 
 
 
+.collaborative-section{
+    margin-bottom: 167px;
+}
+.collaborative{
+    @include display();
+}
+.collaborative__content{
+    width: 486px;
+    margin-right: 84px;
+}
+.collaborative__text{
+    display: inline-block;
+    margin-bottom: 8px;
+    @include textStyle($fs:16px, $fw:600, $lh:normal)
+}
+.collaborative__title{
+    margin-bottom: 23px;
+    @include textStyle($fs:32px, $fw:700, $lh:normal)
+}
+.collabrative__bottom-text{
+    margin-bottom: 30px;
+}
+.collaborative__strong{
+    display: inline-block;
+    margin-bottom: 12px;
+}
+.makers__text{
+    margin-bottom: 25px;
+}
+.makers__text--margin{
+    margin-bottom: 0;
+}
 
 
+@media (max-width:950px){
+
+    .collaborative{
+        @include display($direction:column-reverse);
+    }
+    .collaborative__content{
+        width: 100%;
+    }
+    picture{
+        margin-bottom: 50px;
+    }
+    .collaborative-section{
+        margin-bottom: 80px;
+    }
+}
