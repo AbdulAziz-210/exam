@@ -41,8 +41,6 @@
     }
     .management__content{
         margin-right: 0;
-        // @include display($align:center, $justify:center, $direction:column);
-        // width: 100%;
     }
     .management__title{
         margin-bottom: 16px;
@@ -63,6 +61,6 @@
 
 @media (max-width:530px){
     picture{
-        width: 100%;
+        // width: 100%;
     }
 }

@@ -32,11 +32,6 @@
 .product__list-item{
     max-width: 240px;
     text-align: left;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
-    // @include display($direction:column, $align:start);
 }
 .product__list-wrap{
     // @include display($direction:column, $align:start);
@@ -112,3 +107,8 @@
         width: 100%;
     }
 }
+
+
+// @media (max-width:600px){
+
+// }

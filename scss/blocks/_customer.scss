@@ -4,7 +4,7 @@
 .customer-section{
     margin-bottom: 168px;
 }
-picture{
+.customer__picture{
     margin-right: 94px;
 }
 .customer{
@@ -45,7 +45,7 @@ picture{
         width: 100%;
         @include display($align:center, $justify:center, $direction:column);
     }
-    picture{
+    .customer__picture{
         @include display($align:center, $justify:center);
         margin-right: 0;
         width: 100%;
