@@ -1,20 +1,133 @@
 
 
 
+
+.price-section{
+    margin-bottom: 150px;
+}
+
 .price__content{
-    @include display();
+    margin-bottom: 50px;
+    @include display($align:center, $justify:center, $direction:column);
+
 }
 .price__title{
-    @include display($fs:34px, $fw:700, $lh:normal);
     margin-bottom: 8px;
+    @include display();
+    @include textStyle($fs:34px, $fw:700, $lh:normal);
 }
 .price__text{
-    @include display($fs:16px, $fw:500, $lh:normal);
+    @include textStyle($fs:16px, $fw:500, $lh:normal);
+}
+.price__list{
+    @include display();
+}
+.price__item+.price__item{
+    margin-left: 71px;
+}
+.price__item{
+    @include display($align:center, $justify:center, $direction:column);
+    width: 322px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s linear;
+
+    &:hover{
+        background-color: #02897A;
+    }
+
+    &:hover>.price__item-title{
+        color: #FFF;
+    }
+    &:hover>.price__item-text{
+        color: #FFF;
+    }
+    &:hover>.price__main-wrap>.price__item-strong{
+        color: #FFF;
+    }
+    &:hover>.price__main-wrap>.price__wrap>.price__dollar{
+        color: #FFF;
+    }
+    &:hover>.price__inner-list>.inner__item{
+        color: #fff;
+    }
+    &:hover>.price__link{
+        background-color: #fff;
+        color: #02897A;
+    }
 }
 
 
 
 
+
+
+
+.price__item-title{
+    padding-top: 24px;
+    margin-bottom: 8px;
+    @include textStyle($fs:24px, $fw:700, $lh:48px);
+}
+.price__item-text{
+    @include textStyle($fs:16px, $fw:400, $lh:40px);
+}
+
+
+
+.price__main-wrap{
+    @include display($align:center);
+}
+.price__item-strong{
+    margin-right: 8px;
+    @include display();
+    letter-spacing: 0.2px;
+    @include textStyle($color:#02897A, $fs:76px, $fw:700, $lh:100px);
+}
+.price__wrap{
+    
+    @include display($direction:column);
+
+}
+.price__dollar{
+    @include textStyle($color:#02897A, $fs:24px, $fw:700, $lh:30px);
+}
+.price__month{
+    letter-spacing: 0.1px;
+    @include textStyle($color:#AFAFAF, $fs:16px, $fw:400, $lh:19px);
+}
+
+
+.price__inner-list{
+    text-align: center;
+    margin-bottom: 22px;
+}
+.inner__item{
+    margin-bottom: 16px;
+}
+.price__link{
+    margin-bottom: 32px;
+    padding: 11px 19px;
+    background-color: #02897A;
+    border-radius: 8px;
+    @include textStyle($color:#fff, $fs:18px, $fw:600, $lh:normal);
+}
+
+
+
+
+@media (max-width:950px){
+    .price__list{
+        @include display($direction:column);
+    }
+    .price__item{
+        margin-bottom: 32px;
+        margin-left: 0;
+    }
+    .price__list{
+        @include display($align:center, $justify:center, $direction:column);
+    }
+}
 
 
 
