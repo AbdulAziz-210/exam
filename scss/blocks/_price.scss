@@ -1,0 +1,21 @@
+
+
+
+.price__content{
+    @include display();
+}
+.price__title{
+    @include display($fs:34px, $fw:700, $lh:normal);
+    margin-bottom: 8px;
+}
+.price__text{
+    @include display($fs:16px, $fw:500, $lh:normal);
+}
+
+
+
+
+
+
+
+
